@@ -1,54 +1,44 @@
 package br.com.aula_poo.primeira_lista;
-import java.util.InputMismatchException;
+
 import java.util.Scanner;
+import java.util.logging.Logger;
+
+import br.com.codeArt.uteis.Util;
 
 public class TerceiroExercicio {
-	
+
+	static Logger logger = Util.setupLogger();
+
 	public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
 
-        int num1 = 0;
-        int num2 = 0;
+		Scanner sc = new Scanner(System.in);
 
-       
-        while (true) {
-            try {
-                System.out.print("Digite o primeiro número inteiro: ");
-                num1 = scanner.nextInt();
-                System.out.print("Digite o segundo número inteiro: ");
-                num2 = scanner.nextInt();
-                break;  
-            } catch (InputMismatchException e) {
-                System.out.println("Erro: Por favor, insira apenas números inteiros.");
-                scanner.next();  
-            }
-        }
+		int x = 0, y = 0;
+		boolean entradaValida = false;
 
-     
-        System.out.println("Resultados das operações:");
-        
-      
-        System.out.println(num1 + " + " + num2 + " = " + (num1 + num2));
+		while (!entradaValida) {
+			logger.info("Digite o primeiro número inteiro: ");
+			x = sc.nextInt();
+			logger.info("Digite o segundo número inteiro: ");
+			y = sc.nextInt();
 
-       
-        System.out.println(num1 + " - " + num2 + " = " + (num1 - num2));
+			if (x < 0 || y < 0) {
+				logger.info("Erro: Não é permitido digitar números negativos. Tente novamente.\n");
+			} else {
+				entradaValida = true;
+			}
+		}
 
- 
-        System.out.println(num1 + " * " + num2 + " = " + (num1 * num2));
+		logger.info(String.format("Soma: %d", (x + y)));
+		logger.info(String.format("Subtração: %d", (x - y)));
+		logger.info(String.format("Multiplicação: %d", (x * y)));
 
-       
-        if (num2 != 0) {
-            System.out.println(num1 + " / " + num2 + " = " + (num1 / num2));
-        } else {
-            System.out.println("Erro: Não é possível dividir por zero.");
-        }
+		if (y == 0) {
+			logger.info("Erro: Não é permitido dividir por zero.");
+		} else {
+			logger.info(String.format("Divisão: %d", (x / y)));
+		}
 
-        scanner.close();
-    }
+		sc.close();
+	}
 }
-
-
-
-
-
-

@@ -1,29 +1,33 @@
 package br.com.aula_poo.primeira_lista;
+
 import java.util.Scanner;
+import java.util.logging.Logger;
+
+import br.com.codeArt.uteis.Util;
 
 public class SegundoExercicio {
-    
+
+	Logger logger = Util.setupLogger();
+
 	public static void main(String[] args) {
 
-        
-       
- Scanner scanner = new Scanner(System.in);
-           
-        int somaDasIdades = 0;
+		SegundoExercicio exercicio = new SegundoExercicio();
+		Scanner sc = new Scanner(System.in);
 
-        
-        System.out.print("Digite a sua idade: ");
-        int minhaIdade = scanner.nextInt();
-        somaDasIdades += minhaIdade; 
+		int somaDasIdades = 0;
 
-        for (int i = 1; i <= 5; i++) {  
-            System.out.print("Digite a idade do colega " + i + ": ");
-            int idade = scanner.nextInt();
-            somaDasIdades += idade;  
-        }
+		exercicio.logger.info("Digite a sua idade: ");
+		int minhaIdade = sc.nextInt();
+		somaDasIdades += minhaIdade;
 
-        System.out.println("A soma das idades é: " + somaDasIdades);
-        
-        scanner.close();  
-    }
+		for (int i = 1; i <= 5; i++) {
+			exercicio.logger.info(String.format("Digite a idade do colega %d: ", i));
+			int idade = sc.nextInt();
+			somaDasIdades += idade;
+		}
+
+		exercicio.logger.info(String.format("A soma das idades é: %d", somaDasIdades));
+
+		sc.close();
+	}
 }

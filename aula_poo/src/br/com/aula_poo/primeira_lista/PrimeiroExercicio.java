@@ -1,31 +1,39 @@
 package br.com.aula_poo.primeira_lista;
+
 import java.util.Scanner;
+
+import br.com.codeArt.uteis.Util;
 
 /*
  * Lista 1 - Exercicio 1
  * Escreva e leia o nome e sobrenome
  */
 
-
 public class PrimeiroExercicio {
 
-	public static void main(String[] args) {
-		//declaro scanner para input de dados
-		Scanner sc = new Scanner(System.in);
-		// perguntar nome
-		System.out.print("Qual seu nome?"); 
-		// espera e captura a entrada do usuário
-		String nome = sc.nextLine();
-		
-		System.out.print("Qual seu sobrenome?");
-		String sobrenome = sc.nextLine();
-		
-		System.out.println("Olá " + nome + " " + sobrenome  + ", seja bem vindo ao universo da programação!");
-	    System.out.printf("Olá %s %s, seja bem vindo ao universo da programação!", nome, sobrenome);
-		sc.close();
-		
-	
-		
-	}
+	private static final java.util.logging.Logger logger = Util.setupLogger();
 
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+
+		String nome;
+		String sobrenome;
+
+		logger.info("Digite seu nome:");
+
+		nome = sc.nextLine();
+		logger.info("Nome digitado: " + nome);
+
+		logger.info("Digite seu sobrenome:");
+
+		sobrenome = sc.nextLine();
+		logger.info("Sobrenome digitado: " + sobrenome);
+
+		logger.info("Olá, " + nome + " " + sobrenome + ". Seja bem-vindo ao mundo de POO!");
+
+		sc.close();
+		logger.info("Scanner fechado");
+
+	}
 }
