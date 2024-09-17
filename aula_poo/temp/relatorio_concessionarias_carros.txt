@@ -1,0 +1,15 @@
+Concessionária: Concessionária Poo - Endereço: Rua Serratec, 12345
+Carros disponíveis:
+ - Civic | Marca: Honda | Preço: R$95000.0
+ - Nissan GT-R | Marca: Nissan | Preço: R$1500000.0
+
+Concessionária: Concessionária Mágica - Endereço: Rua da Magia, 2045
+Carros disponíveis:
+ - Corolla | Marca: Toyota | Preço: R$90000.0
+ - Porsche 911 | Marca: Porsche | Preço: R$1200000.0
+
+Concessionária: Concessionária Fadinha cor de rosa - Endereço: Rua dos Amores, 3050
+Carros disponíveis:
+ - Ferrari F8 | Marca: Ferrari | Preço: R$1500000.0
+ - Lamborghini Aventador | Marca: Lamborghini | Preço: R$2000000.0
+

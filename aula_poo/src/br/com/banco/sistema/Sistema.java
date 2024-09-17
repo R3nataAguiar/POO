@@ -7,7 +7,6 @@ import java.time.ZonedDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Locale;
 import java.util.Scanner;
-
 import br.com.banco.contas.Conta;
 
 public class Sistema {
@@ -42,5 +41,4 @@ public class Sistema {
 		sc.close();
 
 	}
-
 }

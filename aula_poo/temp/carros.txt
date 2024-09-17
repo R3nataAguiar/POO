@@ -1,0 +1,6 @@
+1;Corolla;Toyota;90000.0;2020-05-10;1
+2;Civic;Honda;95000.0;2019-03-15;1
+3;Ferrari F8;Ferrari;1500000.0;2021-08-22;1
+4;Lamborghini Aventador;Lamborghini;2000000.0;2021-06-11;1
+6;Nissan GT-R;Nissan;1500000.0;2021-12-05;1
+5;Porsche 911;Porsche;1200000.0;2020-10-15;3
