@@ -1,12 +1,12 @@
-ConcessionÃ¡ria: ConcessionÃ¡ria Poo
+Concessionária: Concessionária Poo
   Modelo: Civic
   Modelo: Nissan GT-R
 
-ConcessionÃ¡ria: ConcessionÃ¡ria MÃ¡gica
+Concessionária: Concessionária Mágica
   Modelo: Corolla
   Modelo: Porsche 911
 
-ConcessionÃ¡ria: ConcessionÃ¡ria Fadinha cor de rosa
+Concessionária: Concessionária Fadinha cor de rosa
   Modelo: Ferrari F8
   Modelo: Lamborghini Aventador
 
